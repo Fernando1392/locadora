@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minhas reservas</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1>Minhas reservas</h1>
+
+        <p id="avisoLogin" hidden>
+            Para ver suas reservas, você precisa estar logado.
+            <a href="login.html">Entrar</a> ou <a href="cadastro.html">criar uma conta</a>.
+        </p>
+        <p id="mensagemVazia" hidden>
+            Você ainda não tem reservas. <a href="frota.html">Escolha um carro</a> e faça a primeira.
+        </p>
+        <section id="areaReservas" class="lista-reservas"></section>
+    </main>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/carros.js?v=6"></script>
+    <script src="js/minhas-reservas.js?v=6"></script>
+</body>
+</html>

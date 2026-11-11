@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservar</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1>Reservar um carro</h1>
+
+        <p id="avisoLogin" hidden>
+            Para reservar, você precisa estar logado.
+            <a href="login.html">Entrar</a> ou <a href="cadastro.html">criar uma conta</a>.
+        </p>
+
+        <div id="areaReserva" class="area-reserva" hidden>
+            <form id="formularioReserva" class="formulario" novalidate>
+                <label>Carro
+                    <select id="campoCarro"></select>
+                </label>
+                <label>Filial de retirada
+                    <select id="campoFilialRetirada"></select>
+                </label>
+                <label>Filial de devolução
+                    <select id="campoFilialDevolucao"></select>
+                </label>
+                <label>Data de retirada
+                    <input type="date" id="campoDataRetirada">
+                </label>
+                <label>Data de devolução
+                    <input type="date" id="campoDataDevolucao">
+                </label>
+
+                <fieldset class="extras">
+                    <legend>Extras (quantidade)</legend>
+                    <div id="areaExtras"></div>
+                </fieldset>
+
+                <button type="submit" class="botao">Confirmar reserva</button>
+                <p id="mensagemReserva" class="mensagem"></p>
+            </form>
+
+            <aside class="resumo">
+                <h2>Resumo</h2>
+                <img id="resumoImagem" class="resumo-imagem" alt="">
+                <p>Cliente: <strong id="resumoCliente"></strong></p>
+                <p>Carro: <strong id="resumoCarro">-</strong></p>
+                <p>Diárias: <strong id="resumoDias">0</strong></p>
+                <p>Valor do carro: <strong id="resumoValorCarro">R$ 0,00</strong></p>
+                <p>Extras: <strong id="resumoValorExtras">R$ 0,00</strong></p>
+                <p class="resumo-total">Total: <strong id="resumoTotal">R$ 0,00</strong></p>
+            </aside>
+        </div>
+    </main>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/carros.js?v=6"></script>
+    <script src="js/reserva.js?v=6"></script>
+</body>
+</html>

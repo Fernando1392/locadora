@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main class="conteudo conteudo-estreito">
+        <h1>Criar conta</h1>
+        <form id="formularioCadastro" class="formulario" novalidate>
+            <label>Nome completo
+                <input type="text" id="campoNome" maxlength="80" autocomplete="name">
+            </label>
+            <label>CPF
+                <input type="text" id="campoCpf" placeholder="000.000.000-00" maxlength="14" inputmode="numeric" autocomplete="off">
+            </label>
+            <label>E-mail
+                <input type="email" id="campoEmail" maxlength="80" autocomplete="email">
+            </label>
+            <label>Celular
+                <input type="tel" id="campoTelefone" placeholder="(00) 00000-0000" maxlength="15" inputmode="numeric">
+            </label>
+            <label>Senha (6 a 30 caracteres)
+                <input type="password" id="campoSenha" maxlength="30" autocomplete="new-password">
+            </label>
+            <label>Confirmar senha
+                <input type="password" id="campoConfirmacao" maxlength="30" autocomplete="new-password">
+            </label>
+            <button type="submit" class="botao">Criar conta</button>
+            <p id="mensagemCadastro" class="mensagem"></p>
+            <p>Já tem conta? <a href="login.html">Entrar</a></p>
+        </form>
+    </main>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/mascaras.js?v=6"></script>
+    <script src="js/cadastro.js?v=6"></script>
+</body>
+</html>

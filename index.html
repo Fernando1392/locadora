@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aluguel de carros</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho cabecalho-escuro">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+                <h1>O carro certo para cada dia da sua semana.</h1>
+                <p>Do econômico à picape, com diária clara, retirada em três filiais e reserva online em poucos minutos.</p>
+                <div class="hero-botoes">
+                    <a class="botao" href="frota.html">Ver a frota</a>
+                    <a class="botao botao-contorno" href="cadastro.html">Criar conta</a>
+                </div>
+            </div>
+
+            <form id="buscaRapida" class="busca-rapida">
+                <h2>Encontre seu carro</h2>
+                <label>Categoria
+                    <select id="buscaCategoria">
+                        <option value="">Todas</option>
+                    </select>
+                </label>
+                <label>Preço máximo por dia (R$)
+                    <input type="number" id="buscaPreco" min="0" placeholder="Ex.: 150">
+                </label>
+                <button type="submit" class="botao">Buscar carros</button>
+            </form>
+        </section>
+
+        <section class="secao">
+            <h2>Escolha pela categoria</h2>
+            <p class="secao-subtitulo">Toque em uma categoria para ver só os carros dela.</p>
+            <div id="areaCategorias" class="grade-categorias"></div>
+        </section>
+
+        <section class="secao secao-clara">
+            <h2>Carros em destaque</h2>
+            <p class="secao-subtitulo">Os modelos que mais combinam com viagens curtas e uso diário.</p>
+            <div id="areaDestaques" class="grade-destaques"></div>
+            <p class="secao-link"><a href="frota.html">Ver todos os 12 carros</a></p>
+        </section>
+
+        <section class="secao">
+            <h2>Como funciona</h2>
+            <div class="passos">
+                <div class="passo">
+                    <span class="passo-numero">1</span>
+                    <h3>Crie sua conta</h3>
+                    <p>Cadastre nome, CPF, e-mail e celular. Leva menos de um minuto.</p>
+                </div>
+                <div class="passo">
+                    <span class="passo-numero">2</span>
+                    <h3>Escolha e reserve</h3>
+                    <p>Selecione o carro, as datas, as filiais e os extras. O total aparece na hora.</p>
+                </div>
+                <div class="passo">
+                    <span class="passo-numero">3</span>
+                    <h3>Retire e pegue a estrada</h3>
+                    <p>Leve sua CNH na filial escolhida e devolva na mesma ou em outra.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <h2>Por que alugar com a Lopes Auto</h2>
+            <div class="beneficios">
+                <article>
+                    <h3>Diária sem surpresa</h3>
+                    <p>O valor por dia aparece no cartão de cada carro e o total é calculado antes de confirmar.</p>
+                </article>
+                <article>
+                    <h3>Devolução em outra filial</h3>
+                    <p>Retire no Centro e devolva no Aeroporto, se for mais conveniente para você.</p>
+                </article>
+                <article>
+                    <h3>Extras opcionais</h3>
+                    <p>Cadeirinha de criança e seguro adicional por uma diária pequena.</p>
+                </article>
+                <article>
+                    <h3>Frota variada</h3>
+                    <p>São seis categorias, de carros econômicos a SUVs, utilitários e sedãs premium.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao">
+            <h2>Perguntas frequentes</h2>
+            <div class="perguntas">
+                <details>
+                    <summary>Quais documentos preciso levar?</summary>
+                    <p>CNH válida e CPF, os mesmos dados do cadastro feito no site.</p>
+                </details>
+                <details>
+                    <summary>Posso devolver o carro em outra filial?</summary>
+                    <p>Sim. Na reserva você escolhe uma filial para a retirada e outra para a devolução.</p>
+                </details>
+                <details>
+                    <summary>Como é calculado o valor total?</summary>
+                    <p>O total é o número de diárias multiplicado pela soma do preço do carro com os extras escolhidos.</p>
+                </details>
+                <details>
+                    <summary>Posso cancelar uma reserva?</summary>
+                    <p>Sim. Uma reserva fica com o status "Reservada" até a retirada e pode ser cancelada antes dela.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="chamada-final">
+            <h2>Pronto para pegar a estrada?</h2>
+            <p>Escolha o carro e reserve agora mesmo.</p>
+            <a class="botao" href="reserva.html">Reservar agora</a>
+        </section>
+    </main>
+
+    <footer class="rodape-grande">
+        <div>
+            <strong>Lopes Auto</strong>
+            <p>Para o dia a dia e para viagens.</p>
+        </div>
+        <div>
+            <strong>Páginas</strong>
+            <p><a href="frota.html">Frota</a></p>
+            <p><a href="reserva.html">Reservar</a></p>
+            <p><a href="cadastro.html">Criar conta</a></p>
+        </div>
+        <div>
+            <strong>Filiais</strong>
+            <p>Centro</p>
+            <p>Aeroporto</p>
+            <p>Shopping</p>
+        </div>
+    </footer>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/carros.js?v=6"></script>
+    <script src="js/index.js?v=6"></script>
+</body>
+</html>

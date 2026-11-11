@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nossa frota</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1>Nossa frota</h1>
+
+        <section class="filtros">
+            <label>Categoria
+                <select id="filtroCategoria">
+                    <option value="">Todas</option>
+                </select>
+            </label>
+            <label>Preço máximo por dia (R$)
+                <input type="number" id="filtroPrecoMaximo" min="0" placeholder="Ex.: 150">
+            </label>
+            <button type="button" id="botaoLimpar" class="botao botao-claro">Limpar filtros</button>
+        </section>
+
+        <p id="mensagemVazia" hidden>Nenhum carro encontrado. Tente aumentar o preço máximo ou escolher outra categoria.</p>
+        <section id="areaDosCarros" class="grade-carros"></section>
+    </main>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/carros.js?v=6"></script>
+    <script src="js/frota.js?v=6"></script>
+</body>
+</html>

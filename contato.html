@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1>Contato</h1>
+        <p class="secao-subtitulo">Visite uma de nossas filiais ou envie uma mensagem.</p>
+
+        <section id="areaFiliais" class="grade-filiais"></section>
+
+        <h2>Envie uma mensagem</h2>
+        <form id="formularioContato" class="formulario" novalidate>
+            <label>Nome
+                <input type="text" id="campoNome" maxlength="80">
+            </label>
+            <label>E-mail
+                <input type="email" id="campoEmail" maxlength="80">
+            </label>
+            <label>Mensagem (até 500 caracteres)
+                <textarea id="campoMensagem" rows="5" maxlength="500"></textarea>
+            </label>
+            <button type="submit" class="botao">Enviar mensagem</button>
+            <p id="mensagemContato" class="mensagem"></p>
+        </form>
+    </main>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/carros.js?v=6"></script>
+    <script src="js/contato.js?v=6"></script>
+</body>
+</html>

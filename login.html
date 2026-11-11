@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="css/estilo.css?v=6">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">Lopes Auto</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="frota.html">Frota</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="contato.html">Contato</a>
+            <span id="areaUsuario"></span>
+        </nav>
+    </header>
+
+    <main class="conteudo conteudo-estreito">
+        <h1>Entrar</h1>
+        <form id="formularioLogin" class="formulario" novalidate>
+            <label>E-mail
+                <input type="email" id="campoEmail" autocomplete="email">
+            </label>
+            <label>Senha
+                <input type="password" id="campoSenha" autocomplete="current-password">
+            </label>
+            <button type="submit" class="botao">Entrar</button>
+            <p id="mensagemLogin" class="mensagem"></p>
+            <p>Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </form>
+    </main>
+
+    <script src="js/usuarios.js?v=6"></script>
+    <script src="js/login.js?v=6"></script>
+</body>
+</html>
