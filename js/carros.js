@@ -1,4 +1,4 @@
-// carros.js - dados da frota (mesma lista que montamos antes)
+// Dados da frota
 
 const listaDeCarros = [
     { id: 1, nome: "Fiat Mobi", categoria: "Econômico", precoDiaria: 89, cambio: "Manual", lugares: 4, imagem: "fiat-mobi.webp" },
@@ -17,14 +17,14 @@ const listaDeCarros = [
 
 const listaDeCategorias = ["Econômico", "Compacto", "Sedan", "SUV", "Utilitário", "Premium"];
 
-// Filiais (viram a tabela Filial no banco de dados)
+// Filiais
 const listaDeFiliais = [
     { codigo: 1, nome: "Centro", endereco: "Rua Exemplo, 100 - Centro", telefone: "(00) 3000-0001", horario: "Seg a sáb, 8h às 18h" },
     { codigo: 2, nome: "Aeroporto", endereco: "Terminal de passageiros, balcão 4", telefone: "(00) 3000-0002", horario: "Todos os dias, 6h às 22h" },
     { codigo: 3, nome: "Shopping", endereco: "Av. Modelo, 500 - piso L1", telefone: "(00) 3000-0003", horario: "Todos os dias, 10h às 22h" }
 ];
 
-// Extras opcionais (viram a tabela Extra no banco de dados)
+// Extras opcionais
 const listaDeExtras = [
     { codigo: 1, descricao: "Cadeirinha de criança", valorDiaria: 15 },
     { codigo: 3, descricao: "Seguro adicional", valorDiaria: 30 }

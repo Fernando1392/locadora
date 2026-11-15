@@ -1,4 +1,4 @@
-// usuarios.js - funções compartilhadas de cadastro e login (usa o localStorage)
+// Funções compartilhadas de cadastro e login (usa o localStorage)
 
 // Lê a lista de usuários salva. Se ainda não existe nada, devolve uma lista vazia.
 function buscarUsuarios() {

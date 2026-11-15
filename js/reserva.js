@@ -1,4 +1,4 @@
-// reserva.js - formulário de reserva, cálculo do total e validação
+// Formulário da reserva, cálculo do total e validação
 
 const avisoLogin = document.getElementById("avisoLogin");
 const areaReserva = document.getElementById("areaReserva");
@@ -12,7 +12,7 @@ const campoDataRetirada = document.getElementById("campoDataRetirada");
 const campoDataDevolucao = document.getElementById("campoDataDevolucao");
 const areaExtras = document.getElementById("areaExtras");
 
-// Passo 1: só quem está logado pode reservar
+// Só quem está logado pode reservar
 const usuarioLogado = buscarUsuarioLogado();
 
 if (usuarioLogado === null) {
@@ -23,7 +23,7 @@ if (usuarioLogado === null) {
     iniciarPagina();
 }
 
-// Passo 2: preencher os menus e os extras
+// Preencher os menus e os extras
 function iniciarPagina() {
     for (let i = 0; i < listaDeCarros.length; i++) {
         const opcao = document.createElement("option");
@@ -56,7 +56,7 @@ function iniciarPagina() {
         document.getElementById("extra-" + extra.codigo).addEventListener("input", atualizarResumo);
     }
 
-    // Passo 3: se veio do catálogo, escolhe o carro que está na URL (reserva.html?carro=3)
+    // Se veio do catálogo, escolhe o carro que está na URL (reserva.html?carro=3)
     const parametros = new URLSearchParams(window.location.search);
     const idDaUrl = parametros.get("carro");
 
@@ -148,7 +148,7 @@ function pegarExtrasEscolhidos() {
     return escolhidos;
 }
 
-// Passo 4: calcular e mostrar o resumo (total = dias x (carro + extras))
+// Calcular e mostrar o resumo (total = dias x (carro + extras))
 function calcularTotais() {
     const carro = buscarCarroPorId(campoCarro.value);
     const dias = calcularDias();
@@ -184,7 +184,7 @@ campoCarro.addEventListener("change", atualizarResumo);
 campoDataRetirada.addEventListener("change", atualizarResumo);
 campoDataDevolucao.addEventListener("change", atualizarResumo);
 
-// Passo 5: validar e salvar a reserva no localStorage
+// Validar e salvar a reserva no localStorage
 function mostrarErroReserva(texto) {
     mensagemReserva.textContent = texto;
     mensagemReserva.className = "mensagem erro";

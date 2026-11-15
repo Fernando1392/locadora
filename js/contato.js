@@ -1,4 +1,4 @@
-// contato.js - mostra as filiais e salva as mensagens enviadas no localStorage
+// Mostra as filiais e salva as mensagens enviadas no localStorage
 
 const areaFiliais = document.getElementById("areaFiliais");
 const formularioContato = document.getElementById("formularioContato");

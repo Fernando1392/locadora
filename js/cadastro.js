@@ -1,4 +1,4 @@
-// cadastro.js - valida o formulário e salva o novo cliente no localStorage
+// Valida o formulário e salva o novo cliente no localStorage
 
 const formularioCadastro = document.getElementById("formularioCadastro");
 const mensagemCadastro = document.getElementById("mensagemCadastro");
@@ -28,7 +28,7 @@ formularioCadastro.addEventListener("submit", function (evento) {
     const senha = document.getElementById("campoSenha").value;
     const confirmacao = document.getElementById("campoConfirmacao").value;
 
-    // Guardamos CPF e celular só com números (sem pontos, traço, parênteses)
+    // Guardamos CPF e celular só com números
     const cpf = campoCpf.value.replace(/\D/g, "");
     const telefone = campoTelefone.value.replace(/\D/g, "");
 

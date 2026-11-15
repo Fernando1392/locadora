@@ -1,4 +1,4 @@
-// mascaras.js - formata CPF e telefone enquanto a pessoa digita
+// Formata CPF e telefone enquanto a pessoa digita
 
 // Recebe qualquer texto e devolve no formato 000.000.000-00
 function formatarCpf(texto) {

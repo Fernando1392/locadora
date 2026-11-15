@@ -1,4 +1,4 @@
-// login.js - confere e-mail e senha com os usuários salvos no localStorage
+// Confere e-mail e senha com os usuários salvos no localStorage
 
 const formularioLogin = document.getElementById("formularioLogin");
 const mensagemLogin = document.getElementById("mensagemLogin");
@@ -22,7 +22,7 @@ formularioLogin.addEventListener("submit", function (evento) {
     const listaDeUsuarios = buscarUsuarios();
 
     if (listaDeUsuarios.length === 0) {
-        mostrarErroLogin("Nenhuma conta foi encontrada neste navegador. Crie uma conta primeiro.");
+        mostrarErroLogin("Nenhuma conta foi encontrada. Crie uma conta primeiro.");
         return;
     }
 

@@ -1,4 +1,4 @@
-// minhas-reservas.js - mostra as reservas da pessoa logada e permite cancelar
+// Mostra as reservas da pessoa logada e permite cancelar
 
 const avisoLogin = document.getElementById("avisoLogin");
 const mensagemVazia = document.getElementById("mensagemVazia");

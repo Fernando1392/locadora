@@ -1,4 +1,4 @@
-// frota.js - mostra os cartões e aplica os filtros da página frota.html
+// Mostra os cartões e aplica os filtros da página frota.html
 
 const areaDosCarros = document.getElementById("areaDosCarros");
 const filtroCategoria = document.getElementById("filtroCategoria");
@@ -6,7 +6,7 @@ const filtroPrecoMaximo = document.getElementById("filtroPrecoMaximo");
 const botaoLimpar = document.getElementById("botaoLimpar");
 const mensagemVazia = document.getElementById("mensagemVazia");
 
-// Passo 1: preencher o menu de categorias usando a lista do carros.js
+// Preencher o menu de categorias usando a lista do carros.js
 function preencherCategorias() {
     for (let i = 0; i < listaDeCategorias.length; i++) {
         const opcao = document.createElement("option");
@@ -16,7 +16,7 @@ function preencherCategorias() {
     }
 }
 
-// Passo 2: criar o cartão (HTML) de um carro
+// Criar o cartão (HTML) de um carro
 function criarCartao(carro) {
     const cartao = document.createElement("article");
     cartao.className = "cartao-carro";
@@ -34,7 +34,7 @@ function criarCartao(carro) {
     return cartao;
 }
 
-// Passo 3: mostrar na tela uma lista de carros
+// Mostrar na tela uma lista de carros
 function mostrarCarros(lista) {
     areaDosCarros.innerHTML = "";
 
@@ -50,7 +50,7 @@ function mostrarCarros(lista) {
     }
 }
 
-// Passo 4: filtrar a lista pela categoria e pelo preço máximo
+// Filtrar a lista pela categoria e pelo preço máximo
 function aplicarFiltros() {
     const categoriaEscolhida = filtroCategoria.value;
     const precoMaximo = Number(filtroPrecoMaximo.value);
@@ -83,14 +83,14 @@ function limparFiltros() {
     mostrarCarros(listaDeCarros);
 }
 
-// Passo 5: ligar os eventos e mostrar todos os carros ao abrir a página
+// Ligando os eventos e mostrar todos os carros ao abrir a página
 filtroCategoria.addEventListener("change", aplicarFiltros);
 filtroPrecoMaximo.addEventListener("input", aplicarFiltros);
 botaoLimpar.addEventListener("click", limparFiltros);
 
 preencherCategorias();
 
-// Se veio da página inicial, aplica os filtros que estão na URL (frota.html?categoria=SUV&preco=250)
+// Se veio da página inicial, aplica os filtros que estão na URL
 const parametrosDaUrl = new URLSearchParams(window.location.search);
 const categoriaDaUrl = parametrosDaUrl.get("categoria");
 const precoDaUrl = parametrosDaUrl.get("preco");

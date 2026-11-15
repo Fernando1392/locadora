@@ -1,4 +1,4 @@
-// index.js - monta as categorias e os destaques da página inicial usando a lista do carros.js
+// Monta as categorias e os destaques da página inicial usando a lista do carros.js
 
 const descricoesDasCategorias = {
     "Econômico": "Pequenos e econômicos, ótimos para a cidade.",
